@@ -16,9 +16,6 @@
         android:label="fragment_kos"
         tools:layout="@layout/fragment_kos" >
         <action
-            android:id="@+id/action_kosFragment_to_aboutkosFragment"
-            app:destination="@id/aboutkosFragment" />
-        <action
             android:id="@+id/action_kosFragment_to_peraturanFragment"
             app:destination="@id/peraturanFragment" />
         <action
@@ -27,16 +24,6 @@
         <action
             android:id="@+id/action_kosFragment_to_reviewkosFragment"
             app:destination="@id/reviewkosFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/aboutkosFragment"
-        android:name="com.ubaya.adv160419105uts.view.AboutkosFragment"
-        android:label="fragment_aboutkos"
-        tools:layout="@layout/fragment_aboutkos" >
-        <action
-            android:id="@+id/action_aboutkosFragment_to_kosFragment"
-            app:destination="@id/kosFragment"
-            app:popUpTo="@id/kosFragment" />
     </fragment>
     <fragment
         android:id="@+id/peraturanFragment"
@@ -72,10 +59,24 @@
         android:id="@+id/itemProfile"
         android:name="com.ubaya.adv160419105uts.view.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_itemProfile_to_profileDetailFragment"
+            app:destination="@id/profileDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/itemFavorite"
         android:name="com.ubaya.adv160419105uts.view.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileDetailFragment"
+        android:name="com.ubaya.adv160419105uts.view.ProfileDetailFragment"
+        android:label="fragment_profile_detail"
+        tools:layout="@layout/fragment_profile_detail" >
+        <action
+            android:id="@+id/action_profileDetailFragment_to_itemProfile"
+            app:destination="@id/itemProfile"
+            app:popUpTo="@id/itemProfile" />
+    </fragment>
 </navigation>

@@ -6,17 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
 import com.ubaya.adv160419105uts.R
 import com.ubaya.adv160419105uts.viewmodel.ProfileViewModel
 import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_profile_detail.*
+
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ProfileFragment.newInstance] factory method to
+ * Use the [ProfileDetailFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ProfileFragment : Fragment() {
+class ProfileDetailFragment : Fragment() {
     private lateinit var profileModel : ProfileViewModel
 
     override fun onCreateView(
@@ -24,26 +25,23 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_profile_detail, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         profileModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         profileModel.fetch()
         observeProfileModel()
-        buttonEditProfile.setOnClickListener{
-            val action = ProfileFragmentDirections.actionItemProfileToProfileDetailFragment()
-            Navigation.findNavController(it).navigate(action)
-        }
     }
 
     private fun observeProfileModel() {
         profileModel.profileLiveData.observe(viewLifecycleOwner){
-            //.text = it.nama_lengkap.toString()
-            textNamaUser.text = it.nama_lengkap.toString()
-            textEmailUser.text = it.email.toString()
-            //textEmailUser.text =it.email
+            editNama.setText(it.nama_lengkap)
+            editAlamat.setText(it.alamat)
+            editPassword.setText(it.password)
+            editEmail.setText(it.email)
         }
     }
+
 
 }

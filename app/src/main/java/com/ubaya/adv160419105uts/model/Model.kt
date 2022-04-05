@@ -28,5 +28,7 @@ data class Profile(
     var id:String?,
     var photo_profile:String?,
     var nama_lengkap:String?,
-    var email:String?
+    var password:String?,
+    var email:String?,
+    var alamat: String?
 )
