@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationkos"
+    app:startDestination="@id/itemHome">
+
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.ubaya.adv160419105uts.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/kosFragment"
+        android:name="com.ubaya.adv160419105uts.view.KosFragment"
+        android:label="fragment_kos"
+        tools:layout="@layout/fragment_kos" >
+        <action
+            android:id="@+id/action_kosFragment_to_aboutkosFragment"
+            app:destination="@id/aboutkosFragment" />
+        <action
+            android:id="@+id/action_kosFragment_to_peraturanFragment"
+            app:destination="@id/peraturanFragment" />
+        <action
+            android:id="@+id/action_kosFragment_to_fasilitasFragment2"
+            app:destination="@id/fasilitasFragment" />
+        <action
+            android:id="@+id/action_kosFragment_to_reviewkosFragment"
+            app:destination="@id/reviewkosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutkosFragment"
+        android:name="com.ubaya.adv160419105uts.view.AboutkosFragment"
+        android:label="fragment_aboutkos"
+        tools:layout="@layout/fragment_aboutkos" >
+        <action
+            android:id="@+id/action_aboutkosFragment_to_kosFragment"
+            app:destination="@id/kosFragment"
+            app:popUpTo="@id/kosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peraturanFragment"
+        android:name="com.ubaya.adv160419105uts.view.PeraturanFragment"
+        android:label="fragment_peraturan"
+        tools:layout="@layout/fragment_peraturan" >
+        <action
+            android:id="@+id/action_peraturanFragment_to_kosFragment"
+            app:destination="@id/kosFragment"
+            app:popUpTo="@id/kosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewkosFragment"
+        android:name="com.ubaya.adv160419105uts.view.ReviewkosFragment"
+        android:label="fragment_reviewkos"
+        tools:layout="@layout/fragment_reviewkos" >
+        <action
+            android:id="@+id/action_reviewkosFragment_to_kosFragment"
+            app:destination="@id/kosFragment"
+            app:popUpTo="@id/kosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fasilitasFragment"
+        android:name="com.ubaya.adv160419105uts.view.FasilitasFragment"
+        android:label="fragment_fasilitas"
+        tools:layout="@layout/fragment_fasilitas" >
+        <action
+            android:id="@+id/action_fasilitasFragment_to_kosFragment"
+            app:destination="@id/kosFragment"
+            app:popUpTo="@id/kosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.ubaya.adv160419105uts.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/itemFavorite"
+        android:name="com.ubaya.adv160419105uts.view.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>
