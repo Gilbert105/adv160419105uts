@@ -18,7 +18,7 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
     val TAG = "volleyTag"
     fun fetch(){
         queue = Volley.newRequestQueue(getApplication())
-        val url = "https://gist.githubusercontent.com/Gilbert105/907cf82e24cfae3e68aee17c362aa4fa/raw/8660ec26ec718a6a3d4f3ce22d1e6bcbd01c7326/profile.json"
+        val url = "https://gist.githubusercontent.com/Gilbert105/907cf82e24cfae3e68aee17c362aa4fa/raw/070f6582d1a4b03fc099271c7a263b4ed2d16e4c/profile.json"
         val stringRequest = StringRequest(
             Request.Method.GET,url,
             {

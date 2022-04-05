@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import com.ubaya.adv160419105uts.R
+import com.ubaya.adv160419105uts.util.loadImage
 import com.ubaya.adv160419105uts.viewmodel.ProfileViewModel
 import kotlinx.android.synthetic.main.fragment_profile.*
 
@@ -42,6 +43,7 @@ class ProfileFragment : Fragment() {
             //.text = it.nama_lengkap.toString()
             textNamaUser.text = it.nama_lengkap.toString()
             textEmailUser.text = it.email.toString()
+            imageViewProfile.loadImage(it.photo_profile.toString())
             //textEmailUser.text =it.email
         }
     }

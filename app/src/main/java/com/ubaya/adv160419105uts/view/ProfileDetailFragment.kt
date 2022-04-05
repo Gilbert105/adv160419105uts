@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.ubaya.adv160419105uts.R
+import com.ubaya.adv160419105uts.util.loadImage
 import com.ubaya.adv160419105uts.viewmodel.ProfileViewModel
 import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile_detail.*
@@ -40,6 +41,7 @@ class ProfileDetailFragment : Fragment() {
             editAlamat.setText(it.alamat)
             editPassword.setText(it.password)
             editEmail.setText(it.email)
+            imageViewGambarDetailProfile.loadImage(it.photo_profile)
         }
     }
 
