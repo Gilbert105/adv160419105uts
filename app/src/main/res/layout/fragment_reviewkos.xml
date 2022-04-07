@@ -1,14 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ReviewkosFragment">
+    tools:context=".view.ReviewkosFragment" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageViewFasilitasU1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasU2"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textFasilitasUmum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageViewFasilitasU5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textFasilitasUmum"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasU4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasU5"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasU3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasU4"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasU2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasU3"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/imageViewHarga1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHarga2"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewHarga3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHarga4"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewHarga4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHarga5"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewHarga5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textHarga"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewHarga2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewHarga3"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageViewKenyamanan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenyamanan2"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageViewKenyamanan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenyamanan4"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageViewKenyamanan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenyamaan5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageViewKenyamaan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textKenyamanan"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textKenyamanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageViewKenyamanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenyamanan3"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasK2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasK3"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textFasilitasKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasK5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textFasilitasKamar"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasK4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasK5"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasK3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasK4"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageViewFasilitasK1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFasilitasK2"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageViewKeamanan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKeamanan4"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKeamanan4" />
+
+    <TextView
+        android:id="@+id/textKeamanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageViewKeamanan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textKeamanan"
+        app:layout_constraintTop_toTopOf="@+id/textKeamanan" />
+
+    <ImageView
+        android:id="@+id/imageViewKeamanan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKeamanan5"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKeamanan5" />
+
+    <ImageView
+        android:id="@+id/imageViewKeamanan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKeamanan2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKeamanan2" />
+
+    <ImageView
+        android:id="@+id/imageViewKeamanan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKeamanan3"
+        app:layout_constraintTop_toTopOf="@+id/imageViewKeamanan3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Keamanan"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kenyamanan"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Harga"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="fasilitas kamar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Kebersihan"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fasilitas Umum"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Review"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textKebersihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="3.5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageViewKebersihan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/textKebersihan"
+        app:layout_constraintTop_toTopOf="@+id/textKebersihan" />
+
+    <ImageView
+        android:id="@+id/imageViewKebersihan4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKebersihan5"
+        app:layout_constraintTop_toTopOf="@+id/textKebersihan" />
+
+    <ImageView
+        android:id="@+id/imageViewKebersihan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKebersihan4"
+        app:layout_constraintTop_toTopOf="@+id/textKebersihan" />
+
+    <ImageView
+        android:id="@+id/imageViewKebersihan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKebersihan3"
+        app:layout_constraintTop_toTopOf="@+id/textKebersihan" />
+
+    <ImageView
+        android:id="@+id/imageViewKebersihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKebersihan2"
+        app:layout_constraintTop_toTopOf="@+id/textKebersihan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

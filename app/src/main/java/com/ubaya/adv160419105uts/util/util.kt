@@ -8,10 +8,6 @@ import com.squareup.picasso.Picasso
 import com.ubaya.adv160419105uts.R
 import java.lang.Exception
 
-
-fun ImageView.loadImage(url: String?, progressBar: ProgressBar) {
-
-}
 fun ImageView.loadImage(url: String?) {
     Picasso.get()
         .load(url)
@@ -20,6 +16,22 @@ fun ImageView.loadImage(url: String?) {
         .into(this, object : Callback {
             override fun onSuccess() {
 
+            }
+
+            override fun onError(e: Exception?) {
+            }
+
+        })
+}
+fun ImageView.loadImage(url:String?,progressBar: ProgressBar){
+    Picasso.get()
+        .load(url)
+        .resize(400,400)
+        .centerCrop()
+        .error(R.drawable.ic_baseline_error_24)
+        .into(this, object :Callback{
+            override fun onSuccess() {
+                progressBar.visibility = View.GONE
             }
 
             override fun onError(e: Exception?) {

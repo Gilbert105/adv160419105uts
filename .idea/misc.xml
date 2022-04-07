@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1" />
+        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/drawable/ic_baseline_star_35.xml" value="0.1985" />
+        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/drawable/ic_baseline_star_half_35.xml" value="0.1" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/activity_main.xml" value="0.225" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_aboutkos.xml" value="0.13994565217391305" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_fasilitas.xml" value="0.2033514492753623" />
-        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_favorite.xml" value="0.25" />
+        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_home.xml" value="0.225" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_kos.xml" value="0.225" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_peraturan.xml" value="0.2033514492753623" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_profile.xml" value="0.2507204610951009" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_profile_detail.xml" value="0.25" />
-        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_reviewkos.xml" value="0.225" />
+        <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/fragment_reviewkos.xml" value="0.33" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/layout/kos_list_item.xml" value="0.3068181818181818" />
         <entry key="..\:/Repository/ANMP/Adv160419105UTS/app/src/main/res/menu/menu_bottom.xml" value="0.225" />
       </map>

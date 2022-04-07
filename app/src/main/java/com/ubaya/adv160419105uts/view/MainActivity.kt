@@ -2,6 +2,7 @@ package com.ubaya.adv160419105uts.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
@@ -19,8 +20,25 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
         NavigationUI.setupWithNavController(navView,navController)
         bottomNav.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.itemHome -> showBottomNav()
+                R.id.itemFavorite -> showBottomNav()
+                R.id.itemProfile -> showBottomNav()
+                else -> hideBottomNav()
+            }
+        }
+    }
+    private fun showBottomNav() {
+        bottomNav.visibility = View.VISIBLE
+
     }
 
+    private fun hideBottomNav() {
+        bottomNav.visibility = View.GONE
+
+    }
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp(drawerLayout) || super.onSupportNavigateUp()
     }

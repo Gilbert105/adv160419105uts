@@ -9,7 +9,11 @@
         android:id="@+id/itemHome"
         android:name="com.ubaya.adv160419105uts.view.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_itemHome_to_kosFragment"
+            app:destination="@id/kosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/kosFragment"
         android:name="com.ubaya.adv160419105uts.view.KosFragment"
@@ -24,6 +28,16 @@
         <action
             android:id="@+id/action_kosFragment_to_reviewkosFragment"
             app:destination="@id/reviewkosFragment" />
+        <action
+            android:id="@+id/action_kosFragment_to_itemHome"
+            app:destination="@id/itemHome"
+            app:popUpTo="@id/itemHome" />
+        <argument android:name="idkos"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_kosFragment_to_itemFavorite"
+            app:destination="@id/itemFavorite"
+            app:popUpTo="@id/itemFavorite" />
     </fragment>
     <fragment
         android:id="@+id/peraturanFragment"
@@ -34,6 +48,7 @@
             android:id="@+id/action_peraturanFragment_to_kosFragment"
             app:destination="@id/kosFragment"
             app:popUpTo="@id/kosFragment" />
+        <argument android:name="idkos" />
     </fragment>
     <fragment
         android:id="@+id/reviewkosFragment"
@@ -44,6 +59,9 @@
             android:id="@+id/action_reviewkosFragment_to_kosFragment"
             app:destination="@id/kosFragment"
             app:popUpTo="@id/kosFragment" />
+        <argument
+            android:name="idkos"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/fasilitasFragment"
@@ -54,6 +72,7 @@
             android:id="@+id/action_fasilitasFragment_to_kosFragment"
             app:destination="@id/kosFragment"
             app:popUpTo="@id/kosFragment" />
+        <argument android:name="idkos" />
     </fragment>
     <fragment
         android:id="@+id/itemProfile"
@@ -68,7 +87,11 @@
         android:id="@+id/itemFavorite"
         android:name="com.ubaya.adv160419105uts.view.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_itemFavorite_to_kosFragment"
+            app:destination="@id/kosFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileDetailFragment"
         android:name="com.ubaya.adv160419105uts.view.ProfileDetailFragment"
