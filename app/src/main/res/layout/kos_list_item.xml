@@ -7,11 +7,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +18,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imageViewGambarKosItem"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="90dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -37,14 +36,18 @@
 
             <TextView
                 android:id="@+id/textNamaKos"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="Nama Kos"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@+id/textHargaKos"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/buttonDetailKos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewGambarKosItem" />
 
             <TextView
                 android:id="@+id/textHargaKos"
@@ -64,7 +67,8 @@
                 android:layout_marginBottom="16dp"
                 android:text="Detail"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textNamaKos" />
 
             <ProgressBar
                 android:id="@+id/progressBarKosGambar"

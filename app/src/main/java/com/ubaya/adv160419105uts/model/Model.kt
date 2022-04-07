@@ -6,7 +6,6 @@ data class Kos(
     //SerializedName dipakai jika data pada json berbeda dengan nama field di Android studio
     var id_kos:Int?,
     var nama_kos:String?,
-    var deskripsi:String?,
     var harga_kos:Int?,
     var review_kos:Review?,
     var fasilitas:String?,

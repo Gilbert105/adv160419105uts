@@ -19,7 +19,7 @@ class KosDetailViewModel(application: Application) : AndroidViewModel(applicatio
     val TAG = "volleyTag"
     fun fetch(idkos:String){
         queue = Volley.newRequestQueue(getApplication())
-        val url = "https://gist.githubusercontent.com/Gilbert105/68858e6725ea0bb68393d61dfccfa549/raw/a3b6915eb39c4aeb2c072d38f8a7936d6a850d4f/kos"
+        val url = "https://gist.githubusercontent.com/Gilbert105/68858e6725ea0bb68393d61dfccfa549/raw/a7c4fbc7b5e660822906b190b6dde3bf878a7516/kos.json"
         val stringRequest = StringRequest(
             Request.Method.GET,url,
             {
